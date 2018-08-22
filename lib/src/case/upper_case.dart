@@ -1,8 +1,8 @@
-/// Converts the all characters of [subject] to upper case.
+/// Converts all characters of [subject] to upper case.
 ///
 /// Example:
 /// ```dart
-/// lowerCase("dartLang") // will return "DARTLANG"
+/// upperCase("dartLang") // will return "DARTLANG"
 /// ```
 ///
 String upperCase(String subject) {

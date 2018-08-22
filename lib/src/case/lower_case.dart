@@ -1,4 +1,4 @@
-/// Converts the all characters of [subject] to lower case.
+/// Converts all characters of [subject] to lower case.
 ///
 /// Example:
 /// ```dart
