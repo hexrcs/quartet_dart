@@ -53,3 +53,27 @@ const String UNICODE_CHARACTER = '((?:[' +
     '])|([' +
     WHITESPACE +
     '])|(.)';
+
+const String WORD = '(?:[' +
+    UPPERCASE +
+    '][' +
+    DIACRITICAL_MARK +
+    ']*)?(?:[' +
+    LOWERCASE +
+    '][' +
+    DIACRITICAL_MARK +
+    ']*)+|(?:[' +
+    UPPERCASE +
+    '][' +
+    DIACRITICAL_MARK +
+    ']*)+(?![' +
+    LOWERCASE +
+    '])|[' +
+    DIGIT +
+    ']+|[' +
+    DINGBAT_BLOCK +
+    ']|[^' +
+    NON_CHAR +
+    GENERAL_PUNCTUATION +
+    WHITESPACE +
+    ']+';
