@@ -1,3 +1,5 @@
+import '../helper/regex/patterns.dart';
+
 /// Splits the [subject] into a list of words.
 ///
 /// Example:
@@ -6,12 +8,26 @@
 /// split("dart lang") // will return ["dart", "lang"]
 /// ```
 ///
-List<String> words(String subject, [Pattern customPattern]) {
+List<String> words(String subject, [Pattern customPattern = defaultPattern]) {
   if (subject is! String || subject.length == 0) {
     return [''];
   }
 
-  Pattern pattern; // TODO: implement regex patterns constants
+  RegExp pattern;
 
-  return null;
+  if (customPattern is String) {
+    pattern = RegExp(customPattern);
+  } else if (customPattern is RegExp) {
+    pattern = customPattern;
+  }
+
+  List<String> result =
+      pattern.allMatches(subject).map((m) => m.group(0)).toList();
+  if (result.length == 0) {
+    result = [''];
+  }
+
+  return result;
 }
+
+const String defaultPattern = WORD;

@@ -53,6 +53,6 @@ void main() {
   });
 
   test('words() should return an empty string if null is passed in.', () {
-    expect(words(null), '');
+    expect(words(null), ['']);
   });
 }
