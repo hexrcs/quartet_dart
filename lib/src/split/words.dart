@@ -10,7 +10,7 @@ import '../helper/regex/patterns.dart';
 ///
 List<String> words(String subject, [Pattern customPattern = defaultPattern]) {
   if (subject is! String || subject.length == 0) {
-    return [''];
+    return [];
   }
 
   RegExp pattern;
@@ -21,13 +21,7 @@ List<String> words(String subject, [Pattern customPattern = defaultPattern]) {
     pattern = customPattern;
   }
 
-  List<String> result =
-      pattern.allMatches(subject).map((m) => m.group(0)).toList();
-  if (result.length == 0) {
-    result = [''];
-  }
-
-  return result;
+  return pattern.allMatches(subject).map((m) => m.group(0)).toList();
 }
 
 const String defaultPattern = WORD;

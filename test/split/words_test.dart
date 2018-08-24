@@ -45,14 +45,14 @@ void main() {
       'III',
       'Scherzo'
     ]);
-    expect(words('\n'), ['']);
-    expect(words('***'), ['']);
-    expect(words('***---'), ['']);
-    expect(words('***---'), ['']);
+    expect(words('\n'), []);
+    expect(words('***'), []);
+    expect(words('***---'), []);
+    expect(words('***---'), []);
     expect(words('Quartet\'s awesome!'), ['Quartet', 's', 'awesome']);
   });
 
-  test('words() should return an empty string if null is passed in.', () {
-    expect(words(null), ['']);
+  test('words() should return an empty list if null is passed in.', () {
+    expect(words(null), []);
   });
 }
