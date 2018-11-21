@@ -24,7 +24,3 @@ String camelCase(String subject) {
 
   return _firstWord + _restWords.join('');
 }
-
-String _wordToCamel(int index, String word) {
-  return index == 0 ? lowerCase(word) : capitalize(word, true);
-}
