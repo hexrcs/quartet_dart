@@ -5,7 +5,7 @@ import '../split/words.dart';
 ///
 /// Example:
 /// ```dart
-/// camelCase("dart Lang") // will return "dart-lang"
+/// kebabCase("dart Lang") // will return "dart-lang"
 /// ```
 ///
 String kebabCase(String subject) {
