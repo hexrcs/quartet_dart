@@ -10,14 +10,17 @@ import '../split/words.dart';
 /// ```
 ///
 String camelCase(String subject) {
-  if (subject is! String || subject.length == 0) {
+  List<String> _splittedString = words(subject);
+
+  if (_splittedString.length == 0) {
     return '';
   }
 
-  List<String> _splittedString = words(subject);
   String _firstWord = lowerCase(_splittedString[0]);
-  List<String> _restWords =
-      _splittedString.sublist(1).map((String x) => capitalize(x, true));
+  List<String> _restWords = _splittedString
+      .sublist(1)
+      .map((String x) => capitalize(x, true))
+      .toList();
 
   return _firstWord + _restWords.join('');
 }
