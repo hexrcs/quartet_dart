@@ -44,6 +44,6 @@ void main() {
     expect(kebabCase('四重奏Quartet'), '四重奏quartet');
     expect(kebabCase('Quartet 四重奏'), 'quartet-四重奏');
     expect(kebabCase('QUARTET 四重奏'), 'quartet-四重奏');
-    expect(kebabCase('Quartet四重奏'), 'quartet四重奏');
+    expect(kebabCase('Quartet四重奏'), 'quartet-四重奏');
   });
 }
