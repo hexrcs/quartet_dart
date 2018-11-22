@@ -41,4 +41,21 @@ void main() {
     expect(titleCase('quartet 四重奏'), 'Quartet 四重奏');
     expect(titleCase('QUARTET 四重奏'), 'Quartet 四重奏');
   });
+
+  test(
+      'titleCase() should return the title case and not capitalize at specific characters',
+      () {
+    expect(titleCase('jean-luc is good-looking', ['-']),
+        'Jean-luc Is Good-looking');
+    expect(titleCase('Un·e déput·é·e', ['·']), 'Un·e Déput·é·e');
+    expect(titleCase('Who*wants to-try*next?', ['-', '*']),
+        'Who*wants To-try*next?');
+    expect(
+        titleCase('WHO*WANTS*TO*TRY*NEXT?', ['*']), 'Who*wants*to*try*next?');
+    expect(
+        titleCase(
+            'Well, congratulations! You got yourself caught! Now what\'s the next step in your master plan?',
+            ["'"]),
+        'Well, Congratulations! You Got Yourself Caught! Now What\'s The Next Step In Your Master Plan?');
+  });
 }
