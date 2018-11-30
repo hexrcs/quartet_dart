@@ -1,6 +1,5 @@
 import './lower_case.dart';
 import './capitalize.dart';
-import '../split/words.dart';
 import '../helper/regex/patterns.dart';
 
 /// Converts all characters of [subject] to title case. Optional [notSplitList] specifies a list of
