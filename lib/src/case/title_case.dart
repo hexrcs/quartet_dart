@@ -28,10 +28,10 @@ String titleCase(String subject, [List<String> notSplitList = const []]) {
     int previousIndex = index - 1;
     if (previousIndex >= 0 &&
         notSplitList.indexOf(subject[previousIndex]) >= 0) {
-      index++;
+      index += subString.length;
       return lowerCase(subString);
     } else {
-      index++;
+      index += subString.length;
       return capitalize(subString, true);
     }
   }
