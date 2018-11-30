@@ -1,0 +1,27 @@
+/// Access a character (may be composed of a surrogate pair) from [subject] at specified [position].
+///
+/// If [position] is negative, `-1` refers to the last index, `-2` refers to the
+/// second last index and so on. If [position] is out of bound or [subject] is
+/// null, an empty string will be returned.
+///
+/// Example:
+/// ```dart
+/// expect(runeAt('Dart', 0), 'D');
+/// expect(runeAt('Dart', -1), 't');
+/// expect(runeAt('Dart', 5), '');
+/// ```
+///
+String runesAt(String subject, int position) {
+  if (subject is! String) {
+    return '';
+  }
+
+  List<int> runes = subject.runes.toList();
+  if (runes.length <= position || runes.length + position < 0) {
+    return '';
+  }
+
+  int _realPosition = position < 0 ? runes.length + position : position;
+
+  return String.fromCharCode(runes[_realPosition]);
+}
