@@ -17,4 +17,9 @@ void main() {
     expect(first('Dart Lang', -7), '');
     expect(first('Dart Lang', -1), '');
   });
+
+  test('first() should return an empty string if null is passed in.', () {
+    expect(first(null, 4), '');
+    expect(first(null, 3), '');
+  });
 }

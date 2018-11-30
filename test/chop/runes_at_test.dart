@@ -21,4 +21,9 @@ void main() {
     expect(runesAt('𝐁15', 1), '1');
     expect(runesAt('ab 𝄞', 3), '𝄞');
   });
+
+  test('runesAt() should return an empty string if null is passed in.', () {
+    expect(runesAt(null, 4), '');
+    expect(runesAt(null, 3), '');
+  });
 }

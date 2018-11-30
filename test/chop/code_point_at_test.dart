@@ -35,4 +35,9 @@ void main() {
     expect(codePointAt('Dart', -5), null);
     expect(codePointAt(' ', 1), null);
   });
+
+  test('codePointAt() should return null if null is passed in.', () {
+    expect(codePointAt(null, 4), null);
+    expect(codePointAt(null, 3), null);
+  });
 }

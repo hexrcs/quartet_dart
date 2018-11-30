@@ -24,4 +24,11 @@ void main() {
     expect(charAt('Dart', -5), '');
     expect(charAt(' ', 1), '');
   });
+
+  test(
+      'charAt() should return an empty string if null is passed in.',
+      () {
+    expect(charAt(null, 4), '');
+    expect(charAt(null, 3), '');
+  });
 }
