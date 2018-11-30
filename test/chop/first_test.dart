@@ -12,6 +12,13 @@ void main() {
     expect(first(' Hi!', 10), ' Hi!');
   });
 
+  test('first() should return the first character of a string when index is not specified.',
+      () {
+    expect(first('Dart Lang'), 'D');
+    expect(first(' Hi!'), ' ');
+    expect(first(''), '');
+  });
+
   test('first() should return an empty string if the given index is negative.',
       () {
     expect(first('Dart Lang', -7), '');
