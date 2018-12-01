@@ -6,9 +6,9 @@
 ///
 /// Example:
 /// ```dart
-/// expect(runeAt('Dart', 0), 'D');
-/// expect(runeAt('Dart', -1), 't');
-/// expect(runeAt('Dart', 5), '');
+/// expect(runesAt('Dart', 0), 'D');
+/// expect(runesAt('Dart', -1), 't');
+/// expect(runesAt('Dart', 5), '');
 /// ```
 ///
 String runesAt(String subject, int position) {
