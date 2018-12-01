@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/chop/code_point_at.dart';
+import 'package:quartet/src/chop/code_point_at.dart';
 
 void main() {
   test(

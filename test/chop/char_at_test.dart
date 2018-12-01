@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/chop/char_at.dart';
+import 'package:quartet/src/chop/char_at.dart';
 
 void main() {
   test('charAt() should return the character by index.', () {

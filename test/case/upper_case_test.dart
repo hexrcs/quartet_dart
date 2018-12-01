@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/case/upper_case.dart';
+import 'package:quartet/src/case/upper_case.dart';
 
 void main() {
   test(

@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/case/decapitalize.dart';
+import 'package:quartet/src/case/decapitalize.dart';
 
 void main() {
   test(

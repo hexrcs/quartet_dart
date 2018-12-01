@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/chop/runes_at.dart';
+import 'package:quartet/src/chop/runes_at.dart';
 
 void main() {
   test(

@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/split/words.dart';
+import 'package:quartet/src/split/words.dart';
 
 void main() {
   test('words(String) should split the string into list of words.', () {

@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/chop/first.dart';
+import 'package:quartet/src/chop/first.dart';
 
 void main() {
   test('first() should return the first part of a string before given index.',

@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/case/snake_case.dart';
+import 'package:quartet/src/case/snake_case.dart';
 import '../consts.dart';
 
 void main() {

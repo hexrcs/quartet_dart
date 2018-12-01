@@ -1,5 +1,5 @@
 import "package:test/test.dart";
-import 'package:quartet_dart/src/case/title_case.dart';
+import 'package:quartet/src/case/title_case.dart';
 
 void main() {
   test('titleCase(String) should return the title case of a string.', () {

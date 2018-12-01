@@ -1,1 +1,1 @@
-export 'package:quartet_dart/src/quartet.dart';
+export 'package:quartet/src/quartet.dart';
