@@ -1,4 +1,4 @@
-# This library is still largely WIP, check back when we are hit v0.1.0! :)
+# This library is still largely WIP, check back when we hit v0.1.0! :)
 
 # Quartet.dart
 
