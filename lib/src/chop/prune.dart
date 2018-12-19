@@ -11,7 +11,7 @@ import '../split/words.dart';
 /// ```
 ///
 String prune(String subject, int length, [String suffix = '...']) {
-  if (subject is! String || length is! int) {
+  if (subject is! String || length < 0) {
     return '';
   }
   if (length >= subject.length) {
