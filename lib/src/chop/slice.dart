@@ -1,5 +1,8 @@
 /// Extracts from [subject] a string from [start] position up to [end] position. The character at [end] position is not included.
 ///
+/// If [start] or [end] is negative, `-1` refers to the last index, `-2` refers to the
+/// second last index and so on.
+///
 /// Example:
 /// ```dart
 /// expect(slice('Dart', 2), 'rt');
