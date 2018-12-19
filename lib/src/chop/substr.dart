@@ -3,7 +3,7 @@
 ///
 /// If [start] is negative, `-1` refers to the last index, `-2` refers to the
 /// second last index and so on. If `start + length` is greater than length of
-/// the [subject], then the complete string from starting from [start] will be
+/// the [subject], then the complete substring starting from [start] will be
 /// returned.
 ///
 /// Example:
