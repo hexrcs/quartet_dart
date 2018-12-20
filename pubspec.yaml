@@ -2,7 +2,7 @@ name: quartet
 description: Quartet is a huge collection of useful string manipulation functions written in the Dart language.
 author: Xiaoru Li <hello@xiaoru.li>
 homepage: https://github.com/hexrcs/quartet_dart
-version: 0.0.1
+version: 0.1.1
 
 dev_dependencies:
   test: ^1.0.0
