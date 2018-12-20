@@ -1,4 +1,4 @@
-/// Access a character (may be composed of a surrogate pair) from [subject] at 
+/// Access a character (may be composed of a surrogate pair) from [subject] at
 /// specified [position].
 ///
 /// If [position] is negative, `-1` refers to the last index, `-2` refers to the

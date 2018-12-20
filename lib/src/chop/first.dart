@@ -1,7 +1,7 @@
 /// Return the first part of [subject] before the specified [position]. If no
 /// [position] is given, the first character will be returned.
 ///
-/// If `position >= subject.length`, the complete string will be returned. If 
+/// If `position >= subject.length`, the complete string will be returned. If
 /// [position] is negative or `null`, an empty string will be returned.
 ///
 /// Example:

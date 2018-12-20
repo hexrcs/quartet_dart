@@ -1,7 +1,7 @@
 import './substr.dart';
 
 /// Truncates [subject] to a new [length]. Like `prune()`, but doesn't care if
-/// a word is broken or not. Guarantees the truncated string to be no longer 
+/// a word is broken or not. Guarantees the truncated string to be no longer
 /// than [length], if the [suffix] is shorter than [length].
 ///
 /// Default [suffix] is `'...'`.
