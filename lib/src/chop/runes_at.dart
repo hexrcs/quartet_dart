@@ -1,8 +1,9 @@
-/// Access a character (may be composed of a surrogate pair) from [subject] at specified [position].
+/// Access a character (may be composed of a surrogate pair) from [subject] at 
+/// specified [position].
 ///
 /// If [position] is negative, `-1` refers to the last index, `-2` refers to the
 /// second last index and so on. If [position] is out of bound or [subject] is
-/// null, an empty string will be returned.
+/// `null`, an empty string will be returned.
 ///
 /// Example:
 /// ```dart

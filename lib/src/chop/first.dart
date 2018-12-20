@@ -1,9 +1,8 @@
 /// Return the first part of [subject] before the specified [position]. If no
 /// [position] is given, the first character will be returned.
 ///
-/// If [position] is greater or equal to the length of [subject], the complete
-/// string will be returned. If [position] is negative or null, an empty string
-/// will be returned.
+/// If `position >= subject.length`, the complete string will be returned. If 
+/// [position] is negative or `null`, an empty string will be returned.
 ///
 /// Example:
 /// ```dart

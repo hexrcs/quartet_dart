@@ -2,8 +2,9 @@ import './lower_case.dart';
 import './capitalize.dart';
 import '../helper/regex/patterns.dart';
 
-/// Converts all characters of [subject] to title case. Optional [notSplitList] specifies a list of
-/// characters which won't be seen as a word breaker.
+/// Converts all characters of [subject] to title case.
+///
+/// Optional [notSplitList] specifies a list of characters which will be excluded as word separators.
 ///
 /// Example:
 /// ```dart

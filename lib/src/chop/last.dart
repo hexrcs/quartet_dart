@@ -1,9 +1,8 @@
 /// Return the last [length] characters from [subject]. If no [position] is given,
 /// the last character will be returned.
 ///
-/// If [length] is greater or equal to the length of [subject], the complete
-/// string will be returned. If [subject] is null or [position] is negative, an
-/// empty string will be returned.
+/// If `position >= subject.length`, the complete string will be returned. If
+/// [subject] is `null` or [position] is negative, an empty string will be returned.
 ///
 /// Example:
 /// ```dart

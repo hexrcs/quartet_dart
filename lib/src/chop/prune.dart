@@ -1,7 +1,10 @@
 import '../split/words.dart';
 
-/// Truncates [subject] to a new [length] and does not break the words.
-/// Guarantees that the truncated string is no longer than [length].
+/// Truncates [subject] to a new [length]. Like `truncate()`, but does not break
+/// the words. Guarantees the truncated string to be no longer than [length], if
+/// the [suffix] is shorter than [length].
+///
+/// Default [suffix] is `'...'`.
 ///
 /// Example:
 /// ```dart
