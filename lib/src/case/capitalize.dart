@@ -8,7 +8,7 @@
 /// capitalize("dartLang", true) // will return "Dartlang"
 /// ```
 ///
-String capitalize(String subject, [bool lowerRest = false]) {
+String capitalize(String? subject, [bool lowerRest = false]) {
   if (subject is! String || subject.length == 0) {
     return '';
   }

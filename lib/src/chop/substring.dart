@@ -9,7 +9,7 @@
 /// expect(substring('Dart is awesome', 1, 11), 'art is awe');
 /// ```
 ///
-String substring(String subject, [int start = 0, int end]) {
+String substring(String? subject, [int start = 0, int? end]) {
   if (subject is! String) {
     return '';
   }

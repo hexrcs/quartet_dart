@@ -5,7 +5,7 @@
 /// decapitalize("DartLang") // will return "dartLang"
 /// ```
 ///
-String decapitalize(String subject) {
+String decapitalize(String? subject) {
   if (subject is! String || subject.length == 0) {
     return '';
   }

@@ -13,7 +13,7 @@ import '../split/words.dart';
 /// expect(prune('Once upon', 10), 'Once upon');
 /// ```
 ///
-String prune(String subject, int length, [String suffix = '...']) {
+String prune(String? subject, int? length, [String suffix = '...']) {
   if (subject is! String || length is! int || length < 0) {
     return '';
   }
@@ -22,10 +22,10 @@ String prune(String subject, int length, [String suffix = '...']) {
   }
 
   int truncatedLength = 0;
-  List<String> _words = words(subject);
+  List<String?>? _words = words(subject);
   int offset = 0;
-  for (String word in _words) {
-    offset = subject.indexOf(word, offset) + word.length;
+  for (String? word in _words ?? []) {
+    offset = subject.indexOf(word ?? '', offset) + (word?.length ?? 0);
     if (offset + suffix.length <= length) {
       truncatedLength = offset;
     }

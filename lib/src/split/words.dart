@@ -8,12 +8,12 @@ import '../helper/regex/patterns.dart';
 /// split("dart lang") // will return ["dart", "lang"]
 /// ```
 ///
-List<String> words(String subject, [Pattern customPattern = defaultPattern]) {
+List<String?>? words(String? subject, [Pattern customPattern = defaultPattern]) {
   if (subject is! String || subject.length == 0) {
     return [];
   }
 
-  RegExp pattern;
+  RegExp? pattern;
 
   if (customPattern is String) {
     pattern = RegExp(customPattern);
@@ -21,7 +21,7 @@ List<String> words(String subject, [Pattern customPattern = defaultPattern]) {
     pattern = customPattern;
   }
 
-  return pattern.allMatches(subject).map((m) => m.group(0)).toList();
+  return pattern?.allMatches(subject).map((m) => m.group(0)).toList();
 }
 
 const String defaultPattern = WORD;
