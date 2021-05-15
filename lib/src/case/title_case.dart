@@ -13,7 +13,7 @@ import '../helper/regex/patterns.dart';
 /// titleCase("jean-luc is good-looking") // will return "Jean-Luc Is Good-Looking"
 /// ```
 ///
-String titleCase(String subject, [List<String> notSplitList = const []]) {
+String titleCase(String? subject, [List<String> notSplitList = const []]) {
   if (subject is! String || subject.length == 0) {
     return '';
   }
@@ -23,7 +23,7 @@ String titleCase(String subject, [List<String> notSplitList = const []]) {
   int index = 0;
 
   String replacer(Match m) {
-    String subString = m[0];
+    String subString = m[0]!;
     index = subject.indexOf(subString, index);
     int previousIndex = index - 1;
     if (previousIndex >= 0 &&

@@ -11,7 +11,7 @@
 /// expect(charAt('Dart', 5), '');
 /// ```
 ///
-String charAt(String subject, int position) {
+String charAt(String? subject, int position) {
   if (subject is! String ||
       subject.length <= position ||
       subject.length + position < 0) {

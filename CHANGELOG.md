@@ -11,3 +11,7 @@
 
 * Initial release.
 * Complete `case` functions.
+
+## 0.2.0
+
+* Migration to null-safety dart 2.12.0.

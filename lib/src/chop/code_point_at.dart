@@ -15,7 +15,7 @@ import './runes_at.dart';
 /// expect(codePointAt('Dart', 5), null);
 /// ```
 ///
-int codePointAt(String subject, int position) {
+int? codePointAt(String? subject, int position) {
   String char = runesAt(subject, position);
   if (char.length == 0) {
     return null;
