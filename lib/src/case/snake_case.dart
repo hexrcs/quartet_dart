@@ -8,8 +8,8 @@ import '../split/words.dart';
 /// snakeCase("dart Lang") // will return "dart_lang"
 /// ```
 ///
-String snakeCase(String subject) {
-  List<String> _splittedString = words(subject);
+String snakeCase(String? subject) {
+  List<String?> _splittedString = words(subject);
 
   if (_splittedString.length == 0) {
     return '';

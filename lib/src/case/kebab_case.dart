@@ -8,8 +8,8 @@ import '../split/words.dart';
 /// kebabCase("dart Lang") // will return "dart-lang"
 /// ```
 ///
-String kebabCase(String subject) {
-  List<String> _splittedString = words(subject);
+String kebabCase(String? subject) {
+  List<String?> _splittedString = words(subject);
 
   if (_splittedString.length == 0) {
     return '';

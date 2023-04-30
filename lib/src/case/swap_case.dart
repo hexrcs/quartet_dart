@@ -5,7 +5,7 @@
 /// swapCase("dartLang") // will return "DARTlANG"
 /// ```
 ///
-String swapCase(String subject) {
+String swapCase(String? subject) {
   if (subject is! String || subject.length == 0) {
     return '';
   }

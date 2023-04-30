@@ -5,7 +5,7 @@
 /// upperCase("dartLang") // will return "DARTLANG"
 /// ```
 ///
-String upperCase(String subject) {
+String upperCase(String? subject) {
   if (subject is! String || subject.length == 0) {
     return '';
   }

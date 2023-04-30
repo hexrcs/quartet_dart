@@ -11,7 +11,7 @@
 /// expect(slice('Dart is awesome', 1, 12), 'art is awe');
 /// ```
 ///
-String slice(String subject, [int start = 0, int end]) {
+String slice(String? subject, [int start = 0, int? end]) {
   if (subject is! String) {
     return '';
   }

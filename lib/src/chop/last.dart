@@ -11,7 +11,7 @@
 /// expect(last(' Hi!', 10), ' Hi!');
 /// ```
 ///
-String last(String subject, [int length = 1]) {
+String last(String? subject, [int length = 1]) {
   if (subject is! String || length < 0) {
     return '';
   }

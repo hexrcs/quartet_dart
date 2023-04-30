@@ -12,7 +12,7 @@
 /// expect(runesAt('Dart', 5), '');
 /// ```
 ///
-String runesAt(String subject, int position) {
+String runesAt(String? subject, int position) {
   if (subject is! String) {
     return '';
   }

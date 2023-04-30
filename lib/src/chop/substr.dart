@@ -14,7 +14,7 @@
 /// expect(substr('infinite loop', -4, 3), 'loo');
 /// ```
 ///
-String substr(String subject, [int start = 0, int length]) {
+String substr(String? subject, [int start = 0, int? length]) {
   if (subject is! String) {
     return '';
   }
