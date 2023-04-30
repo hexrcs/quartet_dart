@@ -5,7 +5,7 @@
 /// lowerCase("dartLang") // will return "dartlang"
 /// ```
 ///
-String lowerCase(String subject) {
+String lowerCase(String? subject) {
   if (subject is! String || subject.length == 0) {
     return '';
   }

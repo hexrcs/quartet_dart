@@ -11,7 +11,7 @@
 /// expect(first(' Hi!', 10), ' Hi!');
 /// ```
 ///
-String first(String subject, [int position = 1]) {
+String first(String? subject, [int position = 1]) {
   if (subject is! String || position < 1) {
     return '';
   }
